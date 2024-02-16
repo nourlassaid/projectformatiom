@@ -1,0 +1,30 @@
+<div class="formations">
+  <app-sidebar></app-sidebar> <!-- Ajoutez le composant app-sidebar ici -->
+  
+  <h2>Liste des Formations</h2>
+
+  <button class="btn btn-primary mb-2" (click)="ajouterFormation()">Ajouter une Formation</button>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Description</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let formation of formations">
+        <th scope="row">{{ formation.id }}</th>
+        <td>{{ formation.nom }}</td>
+        <td>{{ formation.description }}</td>
+        <td>
+          <button class="btn btn-info btn-sm" (click)="editerFormation(formation)">Éditer</button>
+          <button class="btn btn-danger btn-sm" (click)="supprimerFormation(formation)">Supprimer</button>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

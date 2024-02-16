@@ -1,0 +1,22 @@
+.accueil {
+}
+
+.accueil h1 {
+  font-size: 36px; /* Taille de la police du titre */
+}
+
+.accueil .description {
+  background-color: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent pour le contenu */
+  padding: 20px; /* Espacement pour le contenu */
+}
+
+.accueil .description p {
+  font-size: 18px; /* Taille de la police du texte */
+}
+
+.accueil .formations,
+.accueil .statistiques {
+  background-color: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent pour les sections */
+  padding: 20px; /* Espacement pour les sections */
+  margin-top: 20px; /* Espacement entre les sections */
+}
